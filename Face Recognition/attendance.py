@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 import json
 
-url = 'http://localhost:8080/mark/markpresent'
+url = 'https://api-dot-ece-528-382900.uc.r.appspot.com/mark/markpresent'
 
 time_now_temp = datetime.now()
 file_name = time_now_temp.strftime('%d_%m_%Y.csv')
