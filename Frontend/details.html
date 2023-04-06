@@ -42,7 +42,7 @@
         document.getElementsByClassName("daterange")[0].value = today
         input = document.getElementsByClassName("daterange")[0].value;
         table = document.getElementsByClassName("table")[0];
-        fetchres = fetch("http://localhost:8080/mark/getall")
+        fetchres = fetch("https://api-dot-ece-528-382900.uc.r.appspot.com/mark/getall")
         cleartable()
         fetchres.then(res =>
             res.json()).then(d => {
@@ -80,7 +80,7 @@
             input = document.getElementsByClassName("daterange")[0].value;
             cleartable()
             console.log(input);
-            fetchres = fetch(`http://localhost:8080/mark/get?date=${input}`)
+            fetchres = fetch(`https://api-dot-ece-528-382900.uc.r.appspot.com/mark/get?date=${input}`)
             fetchres.then(res =>
                 res.json()).then(d => {
                     console.log(d)
@@ -119,7 +119,7 @@
             input = document.getElementsByClassName("daterange")[0].value;
             cleartable()
             console.log(input);
-            fetchres = fetch(`http://localhost:8080/mark/getall`)
+            fetchres = fetch(`https://api-dot-ece-528-382900.uc.r.appspot.com/mark/getall`)
             fetchres.then(res =>
                 res.json()).then(d => {
                     console.log(d)
